@@ -5,6 +5,7 @@ import Home from './pages/components/home/Home.component'
 import About from './pages/components/about/About.component'
 import Services from './pages/components/services/Services.component'
 import Contact from './pages/components/contact/Contact.component'
+import Footer from './components/footer/Footer.component'
 
 const App= () => {
   return (
@@ -18,6 +19,7 @@ const App= () => {
       <Route exact path='/services' component={Services} />
       <Redirect to='/' />
     </Switch>
+    <Footer />
     </div>
     </>
   );
